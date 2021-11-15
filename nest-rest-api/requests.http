@@ -1,0 +1,41 @@
+GET /
+Host: localhost:3000
+
+###
+GET /items
+Host: localhost:3000
+
+###
+GET /items/619204c8d594ef4101e59afe
+Host: localhost:3000
+
+
+###
+POST /items
+Host: localhost:3000
+Content-Type: application/json
+Accept: application/json
+
+{
+  "name": "Item three",
+  "description": "This is item one",
+  "qty": 23
+}
+
+###
+DELETE /items/619204c8d594ef4101e59afe
+Host: localhost:3000
+
+
+###
+PUT /items/619204e0d594ef4101e59b00
+Host: localhost:3000
+Content-Type: application/json
+Accept: application/json
+
+{
+  "name": "Item two",
+  "description": "This is item two",
+  "qty": 100
+}
+
